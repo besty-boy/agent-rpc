@@ -1,0 +1,62 @@
+{
+  "name": "agent-rpc",
+  "version": "1.0.0",
+  "description": "Universal Discord Rich Presence daemon for ALL AI coding agents (Antigravity, Codex, OpenCode, Claude Code, T3 Code, Cursor, Mistral Vibe, Copilot, Grok, Hermes, and 24+ more)",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": {
+    "agent-rpc": "bin/agent-rpc.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "assets/mascots",
+    "LICENSE",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/besty-boy/agent-rpc.git"
+  },
+  "homepage": "https://github.com/besty-boy/agent-rpc#readme",
+  "bugs": {
+    "url": "https://github.com/besty-boy/agent-rpc/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "node --no-warnings --experimental-strip-types src/cli.ts",
+    "start": "node --no-warnings dist/src/cli.js start",
+    "scan": "node --no-warnings dist/src/cli.js scan",
+    "icons": "node --no-warnings dist/scripts/sync-icons.js",
+    "test": "npm run build && node --no-warnings --test dist/test/*.test.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "discord",
+    "rich-presence",
+    "discord-rpc",
+    "ai-agents",
+    "coding-agents",
+    "antigravity",
+    "codex",
+    "opencode",
+    "claude-code",
+    "t3-code",
+    "cursor",
+    "mistral-vibe",
+    "copilot",
+    "grok",
+    "hermes",
+    "windsurf",
+    "cline"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.2"
+  }
+}
